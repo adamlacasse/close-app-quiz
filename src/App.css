@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Header {
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+.Header__list {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 3.15rem;
+}
+
+.Header__list--item {
+  background-color: #00CC00;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.List {
+  margin: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 60px;
+  grid-gap: 16px;
+}
+
+.List__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.List__item--btn {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+.selected {
+  position: relative;
+}
+
+.selected::after {
+  content: '';
+  position: absolute;
+  background-color: #dddddd;
+  border: .25em dashed red;
+  opacity: 60%;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+
+
+/* Taken from https://clrs.cc/ */
+
+.List__item--navy {
+  background-color: #001f3f;
+}
+
+.List__item--blue {
+  background-color: #0074d9;
+}
+
+.List__item--aqua {
+  background-color: #7fdbff;
+}
+
+.List__item--teal {
+  background-color: #39cccc;
+}
+
+.List__item--olive {
+  background-color: #3d9970;
+}
+
+.List__item--green {
+  background-color: #2ecc40;
+}
+
+.List__item--lime {
+  background-color: #01ff70;
+}
+
+.List__item--yellow {
+  background-color: #ffdc00;
+}
+
+.List__item--orange {
+  background-color: #ff851b;
+}
+
+.List__item--red {
+  background-color: #ff4136;
+}
+
+.List__item--maroon {
+  background-color: #85144b;
+}
+
+.List__item--fuchsia {
+  background-color: #f012be;
+}
+
+.List__item--purple {
+  background-color: #b10dc9;
+}
+
+.List__item--black {
+  background-color: #111111;
+}
+
+.List__item--gray {
+  background-color: #aaaaaa;
+}
+
+.List__item--silver {
+  background-color: #dddddd;
+}
